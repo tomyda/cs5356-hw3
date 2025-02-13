@@ -59,6 +59,33 @@
         p {
             margin: 0;
         }
+
+        details {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        summary:hover {
+            color: #444;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .stats-label {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -76,6 +103,20 @@
             <p>
                 Leonardo "Leo" Cecilio Fernández López (born 8 November 1998) is a Uruguayan professional footballer who plays as an attacking midfielder for Uruguayan Primera División club Peñarol.
             </p>
+
+            <details>
+                <summary>Career Statistics</summary>
+                <div class="stats-grid">
+                    <span class="stats-label">Appearances:</span>
+                    <span>157</span>
+                    <span class="stats-label">Goals:</span>
+                    <span>42</span>
+                    <span class="stats-label">Assists:</span>
+                    <span>23</span>
+                    <span class="stats-label">First Professional Club:</span>
+                    <span>River Plate Montevideo</span>
+                </div>
+            </details>
         </article>
     </main>
 </body>
