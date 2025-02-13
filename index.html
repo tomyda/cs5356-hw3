@@ -12,10 +12,52 @@
             padding: 20px;
             line-height: 1.6;
         }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        figure {
+            margin: 0;
+            flex-shrink: 0;
+        }
+
         img {
             max-width: 300px;
+            width: 100%;
+            height: auto;
             border-radius: 10px;
-            margin: 20px 0;
+            margin: 0;
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        main {
+            width: 100%;
+        }
+
+        article {
+            max-width: 100%;
+        }
+
+        p {
+            margin: 0;
         }
     </style>
 </head>
